@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Developer Internship | Cognifyz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Google Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <style>
+    :root {
+      --primary: #5a189a;
+      --secondary: #3c096c;
+      --bg: #f8f9fa;
+      --text: #333;
+      --accent: #ffca3a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: url('https://images.unsplash.com/photo-1581090700227-4c4b0f3b1a77?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 5px 20px;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .intro p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      color: #444;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 40px;
+    }
+
+    /* Grid Style Lists */
+    .grid-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .grid-list li {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .grid-list li:hover {
+      transform: translateY(-5px);
+    }
+
+    .grid-list i {
+      font-size: 1.5rem;
+      color: var(--primary);
+    }
+
+    .grid-list p {
+      margin: 0;
+      font-weight: 500;
+      color: #333;
+    }
+
+    /* CTA Button */
+    .cta-button {
+        display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #5a189a;
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: var(--secondary);
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .grid-list {
+        grid-template-columns: 1fr;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+</header>
+
+<section class="intro">
+  <p>
+    Join our <strong>2-month remote internship</strong> designed to help aspiring web developers grow through real projects, hands-on training, and expert mentorship — all from the comfort of your home.
+  </p>
+</section>
+
+<section class="highlights">
+  <h2 class="section-title">Why Join Cognifyz?</h2>
+  <ul class="grid-list">
+    <li><i class="fas fa-laptop-code"></i><p>Work on live web development projects with real impact</p></li>
+    <li><i class="fas fa-user-tie"></i><p>Get mentorship from experienced industry professionals</p></li>
+    <li><i class="fas fa-certificate"></i><p>Receive a verified internship certificate and recognition</p></li>
+    <li><i class="fas fa-clock"></i><p>Enjoy flexible working hours in a fully remote environment</p></li>
+  </ul>
+</section>
+
+<section class="qualifications">
+  <h2 class="section-title">What We're Looking For</h2>
+  <ul class="grid-list">
+    <li><i class="fas fa-code"></i><p>Basic knowledge of HTML, CSS, JavaScript</p></li>
+    <li><i class="fas fa-layer-group"></i><p>Familiarity with front-end or back-end frameworks</p></li>
+    <li><i class="fas fa-lightbulb"></i><p>Creativity, curiosity, and strong problem-solving skills</p></li>
+    <li><i class="fas fa-people-arrows"></i><p>Good communication and collaboration ability</p></li>
+  </ul>
+  
+  <div style="text-align: center;">
+    <a href="https://cognifyz.com/internships/#google_vignette" class="cta-button">Apply Now</a>
+  </div>
+  
+</section>
+
+<footer>
+  <p>📧 cognifyztechnologies@gmail.com |  Nagpur, Maharashtra</p>
+  <p>&copy; 2025 Cognifyz Technologies</p>
+</footer>
+
+</body>
+</html>
